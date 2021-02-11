@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
     white-space: nowrap;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
     overflow-x: auto;
@@ -91,8 +91,13 @@ a {
 .detail-image-frame {
     position: relative;
     text-align: center;
+    transition: transform 333ms;
 }
-
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0ms;
+}
+   
 .detail-image {
     width: 90%;
 }
@@ -112,4 +117,16 @@ a {
     max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    transition: transform 133ms ease-in-out;
+}
+.thumbnail-item:hover {
+    transform: scale(1.1);
+}
+
+.hidden-detail .thumbnail-list {
+    flex-direction: column;
+    align-items: center;
+   }
+.hidden-detail .thumbnail-item {
+    max-width: 80%;
 }
