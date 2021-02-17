@@ -131,7 +131,16 @@ a {
     max-width: 80%;
 }
 .next-btn {
-    max-height: 60%;
-    min-height: 60%;
-    margin: 0px 0px 0px 0px;
+    position: absolute;
+    max-height: 50%;
+    min-height: 50%;
+    max-width: 2.5%;
+    z-index: 10;
+    margin-top: 7%;
+}
+#left-btn {
+    margin-left: 1.5% ;
+}
+#right-btn {
+    margin-left: 96% ; 
 }

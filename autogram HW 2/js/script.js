@@ -62,6 +62,7 @@ function addThumbClickHandler(thumb) {
     thumb.addEventListener('click', function (event) {
         event.preventDefault();
         setDetailsFromThumb(thumb);
+        index = thumb.dataset.index;
         showDetails();
     });
 }
